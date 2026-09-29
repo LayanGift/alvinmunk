@@ -40,11 +40,6 @@ export default function InvitePage({ params }: { params: { handle: string } }) {
   }, []);
 
   useEffect(() => {
-    try {
-      sessionStorage.setItem('alvinmunk.ref', handle); // dashboard nudges a vouch-back
-    } catch {
-      /* storage unavailable */
-    }
     let alive = true;
     setAvatar(undefined);
     resolveHandle(handle)
@@ -52,6 +47,11 @@ export default function InvitePage({ params }: { params: { handle: string } }) {
         if (!alive) return;
         setAddress(addr);
         if (!addr) return;
+        try {
+          sessionStorage.setItem('alvinmunk.ref', handle.replace(/^@/, '').toLowerCase()); // dashboard nudges a vouch-back
+        } catch {
+          /* storage unavailable */
+        }
         const [people, meta] = await Promise.all([
           getPeopleCounts(addr).catch(() => ({ vouchedBy: 0, backed: 0 })),
           getMeta(addr), // the inviter's published face; null → deterministic default
