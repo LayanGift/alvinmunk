@@ -1,1 +1,54 @@
-J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgWCB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7CmltcG9ydCB7IEZyYW1lIH0gZnJvbSAnQC9jb21wb25lbnRzL2Z4L2ZyYW1lJzsKaW1wb3J0IHsgU3RpY2tlciB9IGZyb20gJ0AvY29tcG9uZW50cy91aS9zdGlja2VyJzsKaW1wb3J0IHsgdXNlVHJhbnNsYXRpb25zIH0gZnJvbSAnQC9saWIvaTE4bic7CmltcG9ydCB7IHVzZVByb2ZpbGUgfSBmcm9tICdAL2xpYi9wcm9maWxlJzsKCi ochoKICogSW52aXRlIG51ZGdlIOKAlCBpZiB5b3UgYXJyaXZlZCB2aWEgYSAvdi88aGFuZGxlPiBsaW5rLCB0aGUgZGFzaGJvYXJkIHJlbWluZHMgeW91IHRvCiAqIHZvdWNoIHlvdXIgaW52aXRlciBiYWNrIChjbG9zZXMgdGhlIHJlY3J1aXRpbmcgbG9vcCkuIERpc21pc3NhYmxlOyBjbGVhcnMgdGhlIHJlZi4KICovCmV4cG9ydCBmdW5jdGlvbiBJbnZpdGVOdWRnZSgpIHsKICBjb25zdCB0ID0gdXNlVHJhbnNsYXRpb25zKCk7CiAgY29uc3QgeyBwcm9maWxlIH0gPSB1c2VQcm9maWxlKCk7CiAgY29uc3QgW3JlZiwgc2V0UmVmXSA9IHVzZVN0YXRlPHN0cmluZyB8IG51bGw+KG51bGwpOwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgdHJ5IHsKICAgICAgY29uc3Qgc3RvcmVkID0gc2Vzc2lvblN0b3JhZ2UuZ2V0SXRlbSgnYWx2aW5tdW5rLnJlZicpOwogICAgICBpZiAoIXN0b3JlZCkgcmV0dXJuOwogICAgICBjb25zdCBub3JtYWxpemVkID0gc3RvcmVkLnJlcGxhY2UoL15ALywgJycpLnRyaW0oKS50b0xvd2VyQ2FzZSgpOwogICAgICBjb25zdCBvd25IYW5kbGUgPSBwcm9maWxlPy5oYW5kbGU/LnJlcGxhY2UoL15ALywgJycpLnRyaW0oKS50b0xvd2VyQ2FzZSgpOwogICAgICBpZiAoIW5vcm1hbGl6ZWQgfHwgKG93bkhhbmRsZSAmJiBub3JtYWxpemVkID09PSBvd25IYW5kbGUpKSB7CiAgICAgICAgc2Vzc2lvblN0b3JhZ2UucmVtb3ZlSXRlbSgnYWx2aW5tdW5rLnJlZicpOwogICAgICAgIHJldHVybjsKICAgICAgfQogICAgICBzZXRSZWYobm9ybWFsaXplZCk7CiAgICB9IGNhdGNoIHsKICAgICAgLyogc3RvcmFnZSB1bmF2YWlsYWJsZSAqLwogICAgfQogIH0sIFtwcm9maWxlPy5oYW5kbGVdKTsKCiAgaWYgKCFyZWYpIHJldHVybiBudWxsOwoKICBmdW5jdGlvbiBkaXNtaXNzKCkgewogICAgdHJ5IHsKICAgICAgc2Vzc2lvblN0b3JhZ2UucmVtb3ZlSXRlbSgnYWx2aW5tdW5rLnJlZicpOwogICAgfSBjYXRjaCB7CiAgICAgIC8qIG5vb3AgKi8KICAgIH0KICAgIHNldFJlZihudWxsKTsKICB9CgogIHJldHVybiAoCiAgICA8RnJhbWUgbGFiZWw9e3QoJ2ludml0ZU51ZGdlLmZyYW1lJyl9IGluZGV4PSJSRUYiIGFjY2VudD0ic2Vjb25kYXJ5Ij4KICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBnYXAtMyBwLTQiPgogICAgICAgIDxTdGlja2VyIG5hbWU9ImhhbmQtc2hha2UiIHNpemU9ezQ4fSBjbGFzc05hbWU9ImhpZGRlbiBzaHJpbmstMCBzbTpibG9jayIgLz4KICAgICAgICA8cCBjbGFzc05hbWU9ImZsZXgtMSB0ZXh0LXNtIj4KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZm9udC1tb25vIHRleHQtc2Vjb25kYXJ5Ij5Ae3JlZn08L3NwYW4+IHt0KCdpbnZpdGVOdWRnZS5tZXNzYWdlJyl9CiAgICAgICAgPC9wPgogICAgICAgIDxidXR0b24gb25DbGljaz17ZGlzbWlzc30gYXJpYS1sYWJlbD17dCgnaW52aXRlTnVkZ2UuZGlzbWlzcycpfSBjbGFzc05hbWU9InNocmluay0wIHRleHQtbXV0ZWQtZm9yZWdyb3VuZCBob3Zlcjp0ZXh0LWZvcmVncm91bmQiPgogICAgICAgICAgPFggY2xhc3NOYW1lPSJzaXplLTQiIC8+CiAgICAgICAgPC9idXR0b24+CiAgICAgIDwvZGl2PgogICAgPC9GcmFtZT4KICApOwp9Cg==
+'use client';
+
+import { useEffect, useState } from 'react';
+import { X } from 'lucide-react';
+import { Frame } from '@/components/fx/frame';
+import { Sticker } from '@/components/ui/sticker';
+import { useWallet } from '@/components/wallet/wallet-provider';
+import { useTranslations } from '@/lib/i18n';
+import { clearInviteRef, loadInviteRef, normalizeRefHandle } from '@/lib/invite-ref';
+
+/**
+ * Invite nudge — if you arrived via a /v/<handle> link, the dashboard reminds you to
+ * vouch your inviter back (closes the recruiting loop). Dismissable; clears the ref.
+ * Your own link (opened to preview it before sharing) is not an invite: that ref is
+ * dropped instead of shown.
+ */
+export function InviteNudge() {
+  const t = useTranslations();
+  const { profile } = useWallet();
+  const ownHandle = profile ? normalizeRefHandle(profile.handle) : null;
+  const [ref, setRef] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!ownHandle) return; // nothing to compare the ref against yet
+    const stored = loadInviteRef();
+    if (stored === ownHandle) {
+      clearInviteRef();
+      setRef(null);
+      return;
+    }
+    setRef(stored);
+  }, [ownHandle]);
+
+  if (!ref) return null;
+
+  function dismiss() {
+    clearInviteRef();
+    setRef(null);
+  }
+
+  return (
+    <Frame label={t('inviteNudge.frame')} index="REF" accent="secondary">
+      <div className="flex items-center justify-between gap-3 p-4">
+        <Sticker name="hand-shake" size={48} className="hidden shrink-0 sm:block" />
+        <p className="flex-1 text-sm">
+          <span className="font-mono text-secondary">@{ref}</span> {t('inviteNudge.message')}
+        </p>
+        <button onClick={dismiss} aria-label={t('inviteNudge.dismiss')} className="shrink-0 text-muted-foreground hover:text-foreground">
+          <X className="size-4" />
+        </button>
+      </div>
+    </Frame>
+  );
+}

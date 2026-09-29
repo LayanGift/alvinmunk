@@ -15,6 +15,7 @@ import { Button, buttonVariants } from '@/components/ui/button';
 import { QrCode } from '@/components/fx/qr-code';
 import { useWallet } from '@/components/wallet/wallet-provider';
 import { useTranslations } from '@/lib/i18n';
+import { saveInviteRef } from '@/lib/invite-ref';
 import { shortAddr } from '@alvinmunk/shared';
 import { cn } from '@/lib/utils';
 import type { AvatarConfig } from '@/lib/avatar';
@@ -47,11 +48,7 @@ export default function InvitePage({ params }: { params: { handle: string } }) {
         if (!alive) return;
         setAddress(addr);
         if (!addr) return;
-        try {
-          sessionStorage.setItem('alvinmunk.ref', handle.replace(/^@/, '').toLowerCase()); // dashboard nudges a vouch-back
-        } catch {
-          /* storage unavailable */
-        }
+        saveInviteRef(handle); // only a claimed handle: the dashboard nudges a vouch-back
         const [people, meta] = await Promise.all([
           getPeopleCounts(addr).catch(() => ({ vouchedBy: 0, backed: 0 })),
           getMeta(addr), // the inviter's published face; null → deterministic default
