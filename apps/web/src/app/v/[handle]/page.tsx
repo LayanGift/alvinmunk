@@ -27,6 +27,7 @@ import type { AvatarConfig } from '@/lib/avatar';
  * becomes a recruiting funnel.
  */
 export default function InvitePage({ params }: { params: { handle: string } }) {
+  const normalizeRef = (value: string) => value.replace(/^@/, '').toLowerCase();
   const t = useTranslations();
   const { profile } = useWallet();
   const handle = params.handle.toLowerCase();
@@ -48,7 +49,9 @@ export default function InvitePage({ params }: { params: { handle: string } }) {
         if (!alive) return;
         setAddress(addr);
         if (!addr) return;
-        saveInviteRef(handle); // only a claimed handle: the dashboard nudges a vouch-back
+        const ref = normalizeRef(handle);
+        if (ref === normalizeRef(profile?.handle ?? '')) return;
+        saveInviteRef(ref); // only a claimed handle: the dashboard nudges a vouch-back
         const [people, meta] = await Promise.all([
           getPeopleCounts(addr).catch(() => ({ vouchedBy: 0, backed: 0 })),
           getMeta(addr), // the inviter's published face; null → deterministic default
@@ -61,7 +64,7 @@ export default function InvitePage({ params }: { params: { handle: string } }) {
     return () => {
       alive = false;
     };
-  }, [handle]);
+  }, [handle, profile?.handle]);
 
   // The owner is the connected wallet whose address this handle resolves to.
   // Only they see the (secret-free) invite QR for their own page.

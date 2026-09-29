@@ -21,9 +21,12 @@ export function InviteNudge() {
   const [ref, setRef] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!ownHandle) return; // nothing to compare the ref against yet
     const stored = loadInviteRef();
-    if (stored === ownHandle) {
+    if (!stored) {
+      setRef(null);
+      return;
+    }
+    if (ownHandle && stored === ownHandle) {
       clearInviteRef();
       setRef(null);
       return;

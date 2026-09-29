@@ -5,6 +5,12 @@
  */
 const KEY = 'alvinmunk.ref';
 
+/** The signed-in profile's handle, normalized for comparison with a stored ref. */
+export function isOwnRef(ref: string, profileHandle: string | null | undefined): boolean {
+  if (!profileHandle) return false;
+  return normalizeRefHandle(ref) === normalizeRefHandle(profileHandle);
+}
+
 /** A handle as the ref stores and compares it: trimmed, no leading `@`, lowercase. */
 export function normalizeRefHandle(handle: string): string {
   return handle.trim().replace(/^@/, '').toLowerCase();
